@@ -15,8 +15,24 @@ def index():
 
 @app.route("/index", methods=["post"])
 def post():
-    name = request.form["name"]
-    return render_template("index.html", name=name)
+    input_str = request.form['target_str']
+
+    table = str.maketrans({
+        'i': 'l',
+        'I': 'L',
+        'l': 'i',
+        'L': 'I',
+        'c': 'エ',
+        'C': 'エ',
+        'n': 'ホ',
+        'N': 'ホ',
+        'o': 'Γ',
+        'O': 'Γ',
+    })
+
+    translate_str = input_str.translate(table)
+
+    return render_template("index.html", ijitsu=translate_str)
 
 
 if __name__ == "__main__":
