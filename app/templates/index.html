@@ -15,17 +15,20 @@
 </head>
 
 <body>
-    <div class="uk-width-1-2 uk-container uk-margin-large-top" style=" border: solid 1px;">
+    <!-- <div class="uk-width-2-3 uk-container uk-margin-large-top" style=" border: solid 1px;">
 
         <div class="uk-section" style="background-color:lightblue">
-            <div class="uk-margin-small" style="border: solid 1px;">IJITUS Conversion</div>
+            <div class="uk-margin-small" style="border: solid 1px;">IJITSU Conversion</div>
             <div class="uk-margin-small" style="border: solid 1px;">LJLTSU エΓホverslΓホ</div>
         </div>
 
         <div class="uk-section" style="background-color:lightgray">
             <form action="/index" method="POST">
-                <input class="uk-input uk-form-small" type="text" name="target_str">
-                <button class="uk-button uk-button-primary uk-margin-small-top" type="submit">エΓホvert!!</button>
+
+                <div class="uk-margin" uk-margin>
+                    <input class="uk-input uk-form-width-large" type="text" name="target_str">
+                    <button class="uk-button uk-button-primary" type="submit">エΓホvert!!</button>
+                </div>
             </form>
             <div class="uk-margin" style="border: solid 1px;">現在英文字のみ対応しています。</div>
         </div>
@@ -34,6 +37,33 @@
             <div class="uk-text-center">
                 {{ijitsu}}
             </div>
+        </div>
+    </div> -->
+
+    <div class="uk-section">
+        <div class="uk-child-width-expand uk-text-center uk-grid uk-grid-stack">
+            <div class="uk-flex uk-flex-center uk-first-column">
+                <div class="" style="border: solid 1px;">IJITSU Conversion</div>
+            </div>
+        </div>
+        <div class="uk-child-width-expand uk-text-center uk-grid uk-grid-stack">
+            <form action="/index" method="POST">
+                <div class="uk-margin" uk-margin>
+                    <input class="uk-input uk-form-width-large" type="text" name="target_str">
+                    <button class="uk-button uk-button-primary" type="submit">エΓホvert!!</button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="uk-child-width-expand uk-text-center uk-grid uk-grid-stack">
+            <div class="uk-flex uk-flex-center">
+                <div class="uk-margin" style="border: solid 1px;">現在英文字のみ対応しています。</div>
+            </div>
+        </div> -->
+        <div class="uk-child-width-expand uk-text-center uk-grid uk-grid-stack">
+            <div class="uk-flex uk-flex-center">
+                {{ijitsu}}
+            </div>
+
         </div>
     </div>
 </body>

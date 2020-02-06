@@ -1,9 +1,7 @@
 # flaskとrender_template(HRMLを表示させるための関数)をインポート
 from flask import Flask, render_template, request
 
-# flaskオブジェクトの生成
-
-app = Flask(__name__)
+app = Flask(__name__)  # flaskオブジェクトの生成
 
 # ルーティング。/indexへアクセスされたらindexメソッドを実行する
 @app.route("/index")
