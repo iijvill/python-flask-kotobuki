@@ -5,15 +5,12 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-# ルーティング。/にアクセスされたらhelloメソッドを実行する
-@app.route("/")
 # ルーティング。/indexへアクセスされたらindexメソッドを実行する
 @app.route("/index")
 def index():
-    name = request.args.get("name")  # request.args.getでクエリストリングを受け取ることができる
 
     # render_templateの引数に入れることでhtml側に送ることができる
-    return render_template("index.html", name=name)
+    return render_template("index.html")
 
 
 @app.route("/index", methods=["post"])
