@@ -11,7 +11,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/index", methods=["post"])
+@app.route("/result", methods=["post"])
 def post():
     input_str = request.form['target_str']
 

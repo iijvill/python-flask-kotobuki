@@ -18,14 +18,14 @@
     <div class="uk-section">
         <div class="uk-child-width-expand uk-text-center uk-grid uk-grid-stack">
             <div class="uk-flex uk-flex-center uk-first-column">
-                <div class="ijitsu" style="border: solid 1px;">IJITSU Conversion</div>
+                <div><a href="/index">イジツ文字変換ツール</a></div>
             </div>
         </div>
         <div class="uk-child-width-expand uk-text-center uk-grid uk-grid-stack">
-            <form action="/index" method="POST">
+            <form action="/result" method="POST">
                 <div class="uk-margin" uk-margin>
                     <input class="uk-input uk-form-width-large" type="text" name="target_str">
-                    <button class="uk-button uk-button-primary ijitsu" type="submit">エΓホvert!!</button>
+                    <button class="uk-button uk-button-primary" type="submit">エΓホvert!!</button>
                 </div>
             </form>
         </div>
@@ -41,7 +41,7 @@
             src: url('Nasu-Bold.ttf') format('truetype');
         }
 
-        .ijitsu {
+        div {
             font-family: 'Nasu-Bold', sans-serif;
 
         }
